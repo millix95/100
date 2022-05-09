@@ -68,6 +68,8 @@ btnRoll.addEventListener('click', function () {
       // ako jeste - sledeci igrac
       switchPlayer();
       diceEL.classList.add('hidden');
+      player0.classList.toggle('order');
+      player1.classList.toggle('order');
     }
   }
 });
@@ -81,7 +83,7 @@ btnHold.addEventListener('click', function () {
     document.querySelector(`#score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -93,6 +95,8 @@ btnHold.addEventListener('click', function () {
     } else {
       switchPlayer();
       diceEL.classList.add('hidden');
+      player0.classList.toggle('order');
+      player1.classList.toggle('order');
     }
 
     // 2.1. Zavrsiti igru
