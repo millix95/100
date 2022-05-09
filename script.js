@@ -68,8 +68,8 @@ btnRoll.addEventListener('click', function () {
       // ako jeste - sledeci igrac
       switchPlayer();
       diceEL.classList.add('hidden');
-      player0.classList.toggle('order');
-      player1.classList.toggle('order');
+      // player0.classList.toggle('order');
+      // player1.classList.toggle('order');
     }
   }
 });
@@ -95,8 +95,8 @@ btnHold.addEventListener('click', function () {
     } else {
       switchPlayer();
       diceEL.classList.add('hidden');
-      player0.classList.toggle('order');
-      player1.classList.toggle('order');
+      // player0.classList.toggle('order');
+      // player1.classList.toggle('order');
     }
 
     // 2.1. Zavrsiti igru

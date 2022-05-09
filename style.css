@@ -143,9 +143,9 @@ main {
 .btn--hold {
   top: 46.1rem;
 }
-.order {
+/* .order {
   order: 1;
-}
+} */
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -186,6 +186,7 @@ main {
   .player {
     display: grid;
     justify-items: center;
+    justify-content: center;
     padding: 1rem;
     box-sizing: border-box;
     /* display: flex; */
@@ -196,26 +197,32 @@ main {
   }
   .player--0 {
     /* display: grid; */
-    order: 1;
+    /* order: 1; */
   }
   .player--1 {
     /* display: grid; */
     /* order: 0; */
   }
   .dice {
-    top: 80vh;
+    transform: scale(0.8);
+    top: 73vh;
+    left: calc(50vw - 50px);
+    border-radius: 15px;
   }
   .btn--new {
-    top: 93vh;
+    width: 30%;
+    top: 85vh;
     left: 17%;
   }
   .btn--roll {
-    top: 93vh;
-    left: 54%;
+    width: 30%;
+    top: 85vh;
+    left: 50%;
   }
   .btn--hold {
-    top: 93vh;
-    left: 85%;
+    width: 30%;
+    top: 86.5vh;
+    left: 83%;
   }
   .dugmici {
     display: grid;
